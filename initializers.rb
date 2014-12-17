@@ -19,6 +19,10 @@ fourth_org_level_three = Organization.new("FOURTH_ORG_LEVEL_3", "Fourth Org Leve
 
 second_org_level_two.child_organizations = [third_org_level_three, fourth_org_level_three]
 
+first_org_level_four = Organization.new("FIRST_ORG_LEVEL_4", "First Org Level 4", third_org_level_three, nil)
+
+third_org_level_three.child_organizations = [first_org_level_four]
+
 user_one = User.new("jsmith", nil)
 user_two = User.new("pthompson", nil)
 user_three = User.new("sjames", nil)

@@ -2,13 +2,13 @@ class OrganizationRoleUserTest
 
   def self.initialize_test
     begin
-		organization = Organization.new("ORGANIZATION_TEST", "Organization Test", nil, nil)
-		user = User.new("test", nil)
-		result = OrganizationRoleUser.new(organization, Role::ADMIN, user)
-	rescue
-		result = false
-	end
-	result
+      organization = Organization.new("ORGANIZATION_TEST", "Organization Test", nil, nil)
+      user = User.new("test", nil)
+      result = OrganizationRoleUser.new(organization, Role::ADMIN, user)
+    rescue
+      result = false
+    end
+    result
   end
   
   def self.explicit_level_one_test

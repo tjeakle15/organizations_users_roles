@@ -2,11 +2,11 @@ class OrganizationTest
   
   def self.initialize_test
     begin
-		result = organization = Organization.new("ORGANIZATION_TEST", "Organization Test", nil, nil)
-	rescue
-		result = false
-	end
-	result
+      result = organization = Organization.new("ORGANIZATION_TEST", "Organization Test", nil, nil)
+    rescue
+      result = false
+    end
+    result
   end
   
   def self.level_test

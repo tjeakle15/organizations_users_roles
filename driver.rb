@@ -16,6 +16,12 @@ load 'initializers.rb'
 
 #Loop thru all organizations and list out all users and their role
 def loop_through_organizations(organization)
+
+  if !organization.valid?
+    puts "#{organization.description} is not valid."
+    return
+  end
+
   text = organization.description
 
   if !organization.parent_organization.nil? then text = "#{text} below #{organization.parent_organization.description}" end
