@@ -8,4 +8,4 @@ Run "ruby driver.rb" from the project root in order to run all tests, initialize
 
 No gems were used in the interest of keeping this as small and as simple as possible.
 
-All the models used for this are exercise are are located in the "models" directory and all the tests are located in the "tests" directory.
+All the models used for this exercise are located in the "models" directory and all the tests are located in the "tests" directory.
